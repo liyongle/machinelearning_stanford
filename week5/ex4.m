@@ -40,7 +40,7 @@ sel = randperm(size(X, 1));
 sel = sel(1:100);
 
 %Fred is debugging
-%displayData(X(sel, :));
+displayData(X(sel, :));
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
@@ -55,11 +55,11 @@ fprintf('\nLoading Saved Neural Network Parameters ...\n')
 % Load the weights into variables Theta1 and Theta2
 load('ex4weights.mat');
 
-%start of Fred debugging
-fprintf('\nThe size of Theta1 is %d * %d', size(Theta1));
-fprintf('\nThe size of Theta2 is %d * %d', size(Theta2));
-fprintf('\nThe size of y is %d * %d', size(y));
-%end of Fred debugging
+% start of Fred debugging
+% fprintf('\nThe size of Theta1 is %d * %d', size(Theta1));
+% fprintf('\nThe size of Theta2 is %d * %d', size(Theta2));
+% fprintf('\nThe size of y is %d * %d', size(y));
+% end of Fred debugging
 
 
 % Unroll parameters
